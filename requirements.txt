@@ -2,5 +2,5 @@ tensorflow
 nltk
 colorama
 flask
-sklearn
+sklearn-learn
 gunicorn
