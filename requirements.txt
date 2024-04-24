@@ -1,5 +1,4 @@
 tensorflow
-scikit-learn
 nltk
 colorama
 flask
