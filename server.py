@@ -5,10 +5,13 @@ import pickle
 import numpy as np
 import json
 import keras
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
-
+#why is this here, basically to allow the frontend to communicate with the backend
+CORS(app, origins='http://localhost:3000')
 
 #try .h5 or keras but make sure to change in model and chat.py   
 
