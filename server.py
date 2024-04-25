@@ -24,6 +24,11 @@ with open('label_encoder.pickle', 'rb') as enc:
 with open('intents.json') as file:
     data = json.load(file)
 
+#created this route to test if server is working or not, you can take these from here.
+@app.route('/hello', methods=['GET'])
+def hello():
+    return "Hello, World!"     
+
 # here you can create POST Or PUT.
 @app.route('/noraAi', methods=['POST'])
 def predict():
@@ -45,10 +50,7 @@ def predict():
     return jsonify({'prediction': response})
 
 
-#created this route to test if server is working or not, you can take these from here.
-@app.route('/hello', methods=['GET'])
-def hello():
-    return "Hello, World!"   
+  
     
 @app.route('/hello2', methods=['POST'])
 def hello2():
@@ -56,4 +58,4 @@ def hello2():
     return jsonify({'message': message})     
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(debug=True)

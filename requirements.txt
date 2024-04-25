@@ -1,6 +1,7 @@
-tensorflow-cpu==2.6.0
-nltk==3.6.2
-colorama==0.4.4
-flask==2.0.1
-scikit-learn==0.24.2
-gunicorn==20.1.0
+tensorflow-cpu
+nltk
+colorama
+flask
+scikit-learn
+keras
+gunicorn
