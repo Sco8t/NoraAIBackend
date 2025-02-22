@@ -13,7 +13,7 @@ CORS(app)
 #why is this here, basically to allow the frontend to communicate with the backend
 CORS(app, origins='http://localhost:3000')
 
-#try .h5 or keras but make sure to change in model and chat.py   
+#try .h5 or keras but make sure to change in model and chat.py.   
 
 # this is what loads the AI backend model.
 model = load_model('chat-model.keras')
